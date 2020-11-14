@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Sign Up</title>
+        <style>
+                          div.container{
+                margin:auto 200px;
+                /* padding: 20px 0 20px 0; */
+                /* padding-top:50px; */
+            }
+            div.form-container{
+                box-shadow:rgba(0,0,0,0.08) 2px 2px 5px 5px;
+                max-width:800px;
+                padding: 100px;
+                /* margin-top: 20px; */
+            }
+            div.form-container h1#form-title{
+                text-align:center;
+                background-color:rgb(231, 165, 24);
+                color: #fff;
+                border-radius:5px;
+                font-size:32px;
+                font-weight:400;
+                padding:15px;
+            }
+            p.field label{
+                font-size:14px;
+                font-style: italic;
+                color: #555;
+            }
+            input[type="text"]{
+                padding:5px 7px;
+                color: rgb(231, 165, 24);
+                border:1px solid #ccc;
+                border-radius: 5px;
+                outline: none;
+            }
+            input[type="date"]{
+                padding:5px 15px;
+                color: rgb(231, 165, 24);
+                border:1px solid #ccc;  
+                border-radius: 5px;  
+            }
+            select{
+                padding:5px 15px;
+                color:rgb(231, 165, 24);
+                border-radius:5px;
+                border:1px solid #ccc;
+            }
+            input[type="password"]{
+                padding: 5px 15px;
+                color:rgb(231, 165, 24);
+                border-radius:5px;
+                border:1px solid #ccc;
+            }
+            input[type="submit"]{
+                padding:10px;
+                background-color: rgb(231, 165, 24);
+                color:#fff;
+                border:0;
+                border-radius:5px;
+                font-weight: 700;
+            }
+            /* LOG IN PAGE */
+            div.container{
+                margin: auto 200px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-container">
+                <h1 id="form-title" >Sign Up</h1>
+                <form>
+                    <p class="field">
+                        <label for="firstname">First Name</label>
+                        <input required type="text">
+                    </p>
+                    <p class="field">
+                        <label for="lastname">Last Name</label>
+                        <input required type="text">
+                    </p>
+                    <p class="field">
+                        <label for="dob">Matric Number</label>
+                        <input type="text" required>
+                    </p>
+                    <p class="field">
+                        <label for="gender">Gender</label>
+                        <select>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </p>
+                    <p class="field">
+                        <label for="password">Password</label>
+                        <input type="password">
+                    </p>
+                    <p>
+                        <p class="field">
+                            <label for="password">Confirm Password</label>
+                            <input type="password">
+                        </p>
+                    </p>
+                    <input type="submit" name="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
